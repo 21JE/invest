@@ -10,7 +10,7 @@ export default function Home() {
       .then(
         (result) => {
           // console.log(result)
-          setPrice(result['bpi'][currency]['rate_float'])
+          setPrice(result['bpi'][currency]['rate_float'].toFixed(2))
           console.log(currency, 'currency')
         },
       )
